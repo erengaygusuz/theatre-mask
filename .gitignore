@@ -1,0 +1,111 @@
+﻿##################################################
+# .NET / ASP.NET Core
+##################################################
+bin/
+obj/
+out/
+artifacts/
+publish/
+
+##################################################
+# Build Configurations
+##################################################
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+ARM/
+ARM64/
+
+##################################################
+# ASP.NET Core – Secrets & Config
+##################################################
+.env
+.env.*
+
+appsettings*.json
+!appsettings.json
+!appsettings.Example.json
+
+*.pfx
+secrets.json
+
+##################################################
+# Logs
+##################################################
+logs/
+*.log
+
+##################################################
+# Visual Studio
+##################################################
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+##################################################
+# VS Code
+##################################################
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+##################################################
+# JetBrains Rider / ReSharper
+##################################################
+.idea/
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+##################################################
+# Node / Frontend (if used)
+##################################################
+node_modules/
+wwwroot/lib/
+wwwroot/dist/
+
+##################################################
+# Test & Coverage
+##################################################
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+##################################################
+# OS
+##################################################
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+##################################################
+# Temporary / Backup files
+##################################################
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+~$*
+
+##################################################
+# Docker
+##################################################
+docker-compose.override.yml
+
+##################################################
+# TheatreMask – Project Specific
+##################################################
+/TheatreMask.UI/StaticFiles/
+/TheatreMask.UI/appsettings.Development.json
+/TheatreMask.UI/appsettings.Production.json
