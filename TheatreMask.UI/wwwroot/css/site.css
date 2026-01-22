@@ -890,7 +890,6 @@ h2 {
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.3s ease;
-    display: none;
 }
 
     .contact-item-content a:hover {

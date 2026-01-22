@@ -1,3 +1,5 @@
+using Microsoft.Extensions.FileProviders;
+
 namespace TheatreMask.UI
 {
     public class Program
@@ -20,6 +22,21 @@ namespace TheatreMask.UI
             }
 
             app.UseHttpsRedirection();
+
+            // AppData/Gallery klasöründeki görselleri serve et
+            // Development: AppData/Gallery | Production/Docker: /app/StaticFiles (volume mount edilen)
+            var galleryPath = Environment.GetEnvironmentVariable("GALLERY_PATH") 
+                ?? Path.Combine(app.Environment.ContentRootPath, "AppData/Gallery");
+            
+            if (Directory.Exists(galleryPath))
+            {
+                app.UseStaticFiles(new StaticFileOptions
+                {
+                    FileProvider = new PhysicalFileProvider(galleryPath),
+                    RequestPath = "/app-images"
+                });
+            }
+
             app.UseRouting();
 
             app.UseAuthorization();

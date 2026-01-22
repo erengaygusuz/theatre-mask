@@ -1,4 +1,6 @@
-﻿<!-- Snowflakes -->
+﻿@model TheatreMask.UI.Views.Home.IndexModel
+
+<!-- Snowflakes -->
 <div class="snowflakes" id="snowflakes"></div>
 
 <!-- Header -->
@@ -44,7 +46,7 @@
     <div class="about-grid">
         <div class="about-media">
             <!-- FRAGMAN GÖRSELİ: 23-tiyatro-maske.jpeg -->
-            <img src="images/25-tiyatro-maske.jpg" alt="Tiyatro Maske – Ekip">
+            <img src="images/25-tiyatro-maske.png" alt="Tiyatro Maske – Ekip">
             <!-- YouTube linkini kendi fragmanına göre düzenle -->
             @* <a href="https://www.youtube.com/watch?v=E8gmARGvPlI" target="_blank" rel="noopener" class="youtube-btn" aria-label="YouTube'da Fragmanı İzle">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -294,11 +296,10 @@
 
     <!-- 24 görsel var: 23 fragmanda kullanıldı; diğerleri galeride -->
     <div class="gallery-grid">
-        <div class="gallery-item"><img src="images/05-tiyatro-maske.png" alt="Tiyatro Maske"><div class="gallery-icon">+</div></div>
-        <div class="gallery-item"><img src="images/08-tiyatro-maske.png" alt="Tiyatro Maske"><div class="gallery-icon">+</div></div>
-        <div class="gallery-item"><img src="images/10-tiyatro-maske.png" alt="Tiyatro Maske"><div class="gallery-icon">+</div></div>
-        <div class="gallery-item"><img src="images/19-tiyatro-maske.png" alt="Tiyatro Maske"><div class="gallery-icon">+</div></div>
-        <div class="gallery-item"><img src="images/22-tiyatro-maske.jpeg" alt="Tiyatro Maske"><div class="gallery-icon">+</div></div>
+        @foreach (var image in Model.GalleryImages)
+        {
+            <div class="gallery-item"><img src="@image.Src" alt="@image.Alt"><div class="gallery-icon">+</div></div>
+        }
     </div>
 </section>
 
@@ -333,7 +334,7 @@
             </p>
             <div class="announcement-extras">
                 <p><strong>📍 Konum:</strong> Toplum Gönüllüleri Vakfı Ankara Ofis ve Koordinasyon Merkezi</p>
-                <p><strong>🎓 Bedava Eğitim:</strong> Oyunculuk eğitimlerimiz ücretsizdir!</p>
+                <p><strong>🎓</strong> Eğitimlerimiz herkes faydalanabilsin diye ücretsizdir</p>
             </div>
         </div>
     </div>
