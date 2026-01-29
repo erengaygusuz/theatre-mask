@@ -832,9 +832,10 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 50px;
     align-items: stretch;
+    padding: 0 20px;
 }
 
 .contact-info, .contact-form {
@@ -853,11 +854,14 @@ h2 {
         font-size: 1.8rem;
         color: var(--gold-light);
         margin-bottom: 25px;
+        text-align: center;
     }
 
 .contact-item {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 15px;
     margin-bottom: 25px;
 }
@@ -884,6 +888,7 @@ h2 {
     font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.5;
+    text-align: center;
 }
 
 .contact-item-content a {
@@ -1277,7 +1282,7 @@ footer {
 }
 
 .announcements-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

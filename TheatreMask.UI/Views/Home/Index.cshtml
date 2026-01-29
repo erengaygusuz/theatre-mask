@@ -45,15 +45,7 @@
 
     <div class="about-grid">
         <div class="about-media">
-            <!-- FRAGMAN GÖRSELİ: 23-tiyatro-maske.jpeg -->
             <img src="images/25-tiyatro-maske.png" alt="Tiyatro Maske – Ekip">
-            <!-- YouTube linkini kendi fragmanına göre düzenle -->
-            @* <a href="https://www.youtube.com/watch?v=E8gmARGvPlI" target="_blank" rel="noopener" class="youtube-btn" aria-label="YouTube'da Fragmanı İzle">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                </svg>
-                YouTube'da İzle
-            </a> *@
         </div>
 
         <div class="about-content">
@@ -227,63 +219,6 @@
             </div>
         </div>
     </div>
-
-    @* <div class="games-grid">
-        <!-- Bunları gerçek oyunlarınla güncelle -->
-        <a href="#" class="game-card">
-            <div class="game-card-icon">🎭</div>
-            <div class="game-card-info">
-                <div class="game-card-title">Oyun Adı 1</div>
-                <div class="game-card-meta">Tür • Süre: 80 dk • Tek Perde</div>
-            </div>
-            <div class="game-card-duration">↗</div>
-        </a>
-
-        <a href="#" class="game-card">
-            <div class="game-card-icon">😂</div>
-            <div class="game-card-info">
-                <div class="game-card-title">Oyun Adı 2</div>
-                <div class="game-card-meta">Komedi • Süre: 75 dk • Tek Perde</div>
-            </div>
-            <div class="game-card-duration">↗</div>
-        </a>
-
-        <a href="#" class="game-card">
-            <div class="game-card-icon">🕯️</div>
-            <div class="game-card-info">
-                <div class="game-card-title">Oyun Adı 3</div>
-                <div class="game-card-meta">Dram • Süre: 90 dk • İki Perde</div>
-            </div>
-            <div class="game-card-duration">↗</div>
-        </a>
-
-        <a href="#" class="game-card">
-            <div class="game-card-icon">⚡</div>
-            <div class="game-card-info">
-                <div class="game-card-title">Oyun Adı 4</div>
-                <div class="game-card-meta">Gerilim • Süre: 85 dk • Tek Perde</div>
-            </div>
-            <div class="game-card-duration">↗</div>
-        </a>
-
-        <a href="#" class="game-card">
-            <div class="game-card-icon">🌙</div>
-            <div class="game-card-info">
-                <div class="game-card-title">Oyun Adı 5</div>
-                <div class="game-card-meta">Modern • Süre: 80 dk • Tek Perde</div>
-            </div>
-            <div class="game-card-duration">↗</div>
-        </a>
-
-        <a href="#" class="game-card">
-            <div class="game-card-icon">📖</div>
-            <div class="game-card-info">
-                <div class="game-card-title">Oyun Adı 6</div>
-                <div class="game-card-meta">Klasik • Süre: 95 dk • İki Perde</div>
-            </div>
-            <div class="game-card-duration">↗</div>
-        </a>
-    </div> *@
 </section>
 
 <!-- Gallery -->
@@ -294,7 +229,6 @@
         <p class="section-desc">Gösterimlerimizden, provalarımızdan ve kulis anılarımızdan kareler.</p>
     </div>
 
-    <!-- 24 görsel var: 23 fragmanda kullanıldı; diğerleri galeride -->
     <div class="gallery-grid">
         @foreach (var image in Model.GalleryImages)
         {
@@ -327,7 +261,7 @@
             <div class="announcement-badge announcement-event">ETKİNLİK</div>
             <div class="announcement-header">
                 <h3>🎭 Akıl Hastanesinde Bir Gün</h3>
-                <span class="announcement-date">📅 Pazar – 21.00</span>
+                <span class="announcement-date">📅 25.01.2026 - Pazar – 21.00</span>
             </div>
             <p class="announcement-text">
                 Gerçekle deliliğin iç içe geçtiği, kahkaha ve sürprizlerle dolu bu oyunla buluşmaya hazır mısınız? Sahnemizde sizi bekliyor! Oyunculuğa meraklı olan herkesi aramıza katılmaya davet ediyoruz.
@@ -364,64 +298,8 @@
                 <div class="contact-item-icon">📍</div>
                 <div class="contact-item-content">
                     <h4>Konum</h4>
-                    <p>
-                        <strong>Toplum Gönüllüleri Vakfı Ankara</strong>
-                    </p>
-                    <p style="margin-top: 16px;">
-                        Perçiner İş Merkezi<br>
-                        Kavaklıdere Mahallesi, Bina No 22<br>
-                        4. Kat, Daire 13<br>
-                        06680 Çankaya / Ankara, Türkiye<br><br>
-                        <a href="https://maps.app.goo.gl/oD92XYg2VfBQ683X6" target="_blank" rel="noopener">Haritada Gör →</a>
-                    </p>
                 </div>
             </div>
-
-            @*
-            <div class="contact-item">
-                <div class="contact-item-icon">📞</div>
-                <div class="contact-item-content">
-                    <h4>Telefon</h4>
-                    <p><a href="tel:+905000000000">+90 500 000 00 00</a></p>
-                </div>
-            </div>
-
-            <div class="contact-item">
-                <div class="contact-item-icon">🕐</div>
-                <div class="contact-item-content">
-                    <h4>Çalışma Saatleri</h4>
-                    <p>Prova günleri: Hafta içi<br>İletişim: 10:00 – 18:00</p>
-                </div>
-            </div>
-            *@
         </div>
-        
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191.26618769492865!2d32.8574789!3d39.9132197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f003e5caedd%3A0x5f47280007c61c13!2sToplum%20G%C3%B6n%C3%BCll%C3%BCleri%20Vakf%C4%B1%20Ankara%20Ofis%20ve%20Koordinasyon%20Merkezi!5e0!3m2!1sen!2str!4v1769001778518!5m2!1sen!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-        @*
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">Ad Soyad</label>
-                <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">E-posta</label>
-                <input type="email" id="email" name="email" placeholder="E-postanızı girin" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Mesaj</label>
-                <textarea id="message" name="message" placeholder="Mesajınızı yazın..."></textarea>
-            </div>
-
-            <div class="form-buttons">
-                <button type="submit" class="btn btn-submit">Gönder</button>
-                <button type="reset" class="btn btn-clear">Temizle</button>
-            </div>
-        </form>
-        *@
     </div>
 </section>
